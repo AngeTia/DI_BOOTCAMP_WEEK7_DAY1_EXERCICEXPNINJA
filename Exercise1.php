@@ -1,6 +1,6 @@
 <?php
   // Définition de la classe Utilisateur
-  class Utilisateur {
+  class User {
     // Propriétés pour stocker le nom et l'adresse email de l'utilisateur
     public $nom;
     public $email;
@@ -31,11 +31,11 @@
       }
   }
 
-  $user1 = new Utilisateur("Jane", "Doe");
+  $user1 = new User("Jane", "Doe");
   echo $user1->test();
 
   // Création de l'objet utilisateur
-  $utilisateur = new Utilisateur("Jane", "janedoe@example.com");
+  $utilisateur = new User("Jane", "janedoe@example.com");
 
   // Chaînage des méthodes et des propriétés de l'objet utilisateur
   echo $utilisateur->hello()
