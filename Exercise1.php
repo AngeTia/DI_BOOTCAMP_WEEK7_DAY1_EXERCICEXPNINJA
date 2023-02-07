@@ -12,23 +12,27 @@
     }
 
     // Méthode pour dire bonjour à l'utilisateur
-    public function hello() {
+    public function hello()
+    {
       return "Bonjour " . $this->nom . "!\n";
     }
 
     // Méthode pour enregistrer l'utilisateur
-    public function register() {
+    public function register()
+    {
       return "L'utilisateur " . $this->nom . " a été enregistré avec l'adresse email " . $this->email . "\n";
     }
 
     // Méthode pour envoyer un mail à l'utilisateur
-    public function mail() {
+    public function mail()
+    {
       return "Un mail a été envoyé à " . $this->email . "\n";
     }
 
-    public function test() {
-        return "Le prénom de l'utilisateur est " . $this->nom. "\n";
-      }
+    public function test()
+    {
+      return "Le prénom de l'utilisateur est " . $this->nom. "\n";
+    }
   }
 
   $user1 = new User("Jane", "Doe");
